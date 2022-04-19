@@ -10,6 +10,10 @@ on:
 
 env:
   DIGITALOCEAN_TOKEN: ${{ secrets.DIGITALOCEAN_TOKEN }}
+  ARM_CLIENT_ID: ${{ secrets.TF_ARM_CLIENT_ID }}
+  ARM_CLIENT_SECRET: ${{ secrets.TF_ARM_CLIENT_SECRET }}
+  ARM_SUBSCRIPTION_ID: ${{ secrets.TF_ARM_SUBSCRIPTION_ID }}
+  ARM_TENANT_ID: ${{ secrets.TF_ARM_TENANT_ID }}
 
 jobs:
   plan:
