@@ -17,8 +17,9 @@ variable "cluster_name" {
 variable "node_name" {
   default = "financialcontrol-node-pool"
 }
+
 variable "node_size" {
-  default = "s-4vcpu-8gb"
+  default = "s-1vcpu-2gb"
 }
 
 variable "node_count" {
