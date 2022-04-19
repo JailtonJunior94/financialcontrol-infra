@@ -46,6 +46,8 @@ jobs:
   apply:
     needs: [plan]
     runs-on: ubuntu-20.04
+    environment:
+      name: apply
     defaults:
       run:
         shell: bash
@@ -60,6 +62,8 @@ jobs:
 
   destroy:
     runs-on: ubuntu-20.04
+    environment:
+      name: apply
     defaults:
       run:
         shell: bash
