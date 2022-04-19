@@ -61,6 +61,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Terraform Init
+        run: terraform init
+
       - name: Terraform Apply
         run: terraform apply -auto-approve
 
@@ -76,6 +79,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Terraform Init
+        run: terraform init
 
       - name: Terraform Destroy
         run: terraform destroy -auto-approve
