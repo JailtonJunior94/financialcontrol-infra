@@ -1,5 +1,5 @@
 variable "do_token" {
-  default = "dop_v1_a5bc33efb83a157c8b59061f9fb3bed2392167612773993a9d93404963a48c21"
+  default = ""
 }
 
 variable "region" {
