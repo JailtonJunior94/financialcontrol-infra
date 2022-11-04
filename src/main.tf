@@ -8,7 +8,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "=2.71.0"
+      version = "=3.29.1"
     }
     digitalocean = {
       source = "digitalocean/digitalocean"
@@ -20,4 +20,6 @@ provider "azurerm" {
   features {}
 }
 
-provider "digitalocean" {}
+provider "digitalocean" {
+token = var.do_token
+}
